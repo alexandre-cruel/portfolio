@@ -12,6 +12,8 @@ Alexandre Cruel's personal portfolio.
 - Mettre en bleu foncé
 - Décaler le nom au centre de l'image
 - Séparer css du html
+- Changer image de fond
+
 
 ## Developer Notes
 
