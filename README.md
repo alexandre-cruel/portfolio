@@ -51,3 +51,4 @@ Alexandre Cruel's personal portfolio.
 
 - Pour ouvrir un div class, commencer par tapper le nom de la class puis enter comme:  `#about` + `ENTER` ou `.container` + `ENTER`.
 
+- Si le `git push` se bloque, rouler `git config --global core.askpass "git-gui--askpass"`
