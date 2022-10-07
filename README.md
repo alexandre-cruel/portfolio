@@ -8,12 +8,15 @@ Alexandre Cruel's personal portfolio.
 
 ## TODO list
 
-- Mettre nom en plus gros
-- Mettre en bleu foncé
-- Décaler le nom au centre de l'image
-- Séparer css du html
 - Changer image de fond
-
+- Changer image du About
+- About / Ajouter contenu skills
+- About / Ajouter contenu experience
+- About / Ajouter contenu education
+- Services / Remplacer la section services par autre chose
+- Services / Remplacer texte sous-section services.
+- Services / Remplacer icones sous-section services.
+- My Work / Remplacer les 3 images
 
 ## Developer Notes
 
@@ -28,13 +31,13 @@ Alexandre Cruel's personal portfolio.
   2. Type format
   3. Select "Format Document"
 
-- (HTML Code Validator)[https://validator.w3.org/]:
+- [HTML Code Validator](https://validator.w3.org/):
 
   1. Go to this website
   2. Select "file upload"
   3. Runs verifications on your html
 
-- (CSS Validator)[https://jigsaw.w3.org/css-validator/]
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 - Pour ajouter des tags facilement:
 
@@ -44,4 +47,7 @@ Alexandre Cruel's personal portfolio.
   4. Press Enter
   5. Type element you want to wrap your element with
 
-- (Special characters in HTML)[https://www.w3schools.com/html/html_entities.asp ]
+- [Special characters in HTML](https://www.w3schools.com/html/html_entities.asp)
+
+- Pour ouvrir un div class, commencer par tapper le nom de la class puis enter comme:  `#about` + `ENTER` ou `.container` + `ENTER`.
+

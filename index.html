@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Alex Cruel Personal Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6d0abaf34a.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -25,11 +26,133 @@
                 </nav>
                 <div class="header-text">
                     <p>Machine Learning Engineer</p>
-                    <h1>Hi I'm Alexandre Cruel from France.</h1>
+                    <h1>Hi I'm <span> Alexandre Cruel </span>  <br>  currently located in Montreal.</h1>
 
                 </div>
             </div>
         </div>
+        <!--------- about --------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Vero iure delectus eos architecto odit ea, 
+                            libero, soluta adipisci qui magni deleniti perspiciatis commodi repellendus, 
+                            saepe voluptas temporibus! Molestias, ipsum ea?</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span> <br> Designing Web/App interface</li>
+                                <li><span>Web Dev</span> <br> blablabla</li>
+                                <li><span>App Dev</span> <br> blablablablablabla</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>June 2021 - Current</span> <br> blablabla</li>
+                                <li><span> April 2019 - June 2021</span> <br> blablabla</li>
+                                <li><span>Sep 2019 - April 2019</span> <br> blablablablablabla</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2014-2019</span> <br> Diplome d'ingenieur en Big Data and AI, ESME Sudria</li>
+                                <li><span>2014</span> <br> Baccalaureat Scientifique, Lycee Berthollet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------- services --------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure delectus eos architecto odit ea, libero.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-mug-hot"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure delectus eos architecto odit ea, libero.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure delectus eos architecto odit ea, libero.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------- my work --------->
+        <div id="mywork">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure delectus eos architecto odit ea, libero.</p>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure delectus eos architecto odit ea, libero.</p>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure delectus eos architecto odit ea, libero.</p>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#"class="btn">See more</a>
+            </div>
+        </div>
+        <!--------- contact --------->
+
+
+<!-------- JS --------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
 
     </body>
 </html>
