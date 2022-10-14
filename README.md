@@ -8,15 +8,14 @@ Alexandre Cruel's personal portfolio.
 
 ## TODO list
 
-- Changer image de fond
-- Changer image du About
-- About / Ajouter contenu skills
-- About / Ajouter contenu experience
-- About / Ajouter contenu education
 - Services / Remplacer la section services par autre chose
 - Services / Remplacer texte sous-section services.
 - Services / Remplacer icones sous-section services.
 - My Work / Remplacer les 3 images
+- Trouver solution pour image plate et meme image longue
+- Corriger le fait que la croix et menu ne parte pas en full screen
+- Changer image du About
+- Rendre l'image de fond déroulante sous tout le reste
 
 ## Developer Notes
 
@@ -52,3 +51,5 @@ Alexandre Cruel's personal portfolio.
 - Pour ouvrir un div class, commencer par tapper le nom de la class puis enter comme:  `#about` + `ENTER` ou `.container` + `ENTER`.
 
 - Si le `git push` se bloque, rouler `git config --global core.askpass "git-gui--askpass"`
+
+- [Website used for pictures](https://unsplash.com/s/photos/portfolio)
