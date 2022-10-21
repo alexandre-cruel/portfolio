@@ -5,19 +5,24 @@ Alexandre Cruel's personal portfolio.
 ## Resources
 
 [Used this tutorial to get started](https://www.youtube.com/watch?v=qz0aGYrrlhU)
+[Used for background management](https://www.codeur.com/tuto/css/effet-parallaxe-css/#:~:text=L'effet%20de%20parallaxe%20en,'exploration%20de%20l'utilisateur.)
 
 ## TODO list
 
-- Trouver solution pour image plate et meme image longue
-- Corriger le fait que la croix et menu ne parte pas en full screen
-- Rendre l'image de fond déroulante sous tout le reste
+- Corriger le fait que la croix et menu ne parte pas en full screen 
 -----------------------------
 - Lien "Learn more" Data 
 - Lien "Learn more" Software
 - Lien "Learn more" MLOps
 - Compléter section : services / software dev 
-- Créer les pages Sport / Art / Science
+- Créer pages Sport / Art / Science
 - Section "Other hobbies and passions" / Ajouter un lien vers une autre page 
+- Cleaning du CSS avec link validation
+- Cleaning du HTML avec link validation
+- Rapeticir image fusée dans HOBBIES
+- Image de fond qui déroule en arrière plan (effet parallaxe)
+- Deployment du site ? 
+
 
 ## Developer Notes
 
