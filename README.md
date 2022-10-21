@@ -8,15 +8,15 @@ Alexandre Cruel's personal portfolio.
 
 ## TODO list
 
-- My Work / Remplacer les 3 images
 - Trouver solution pour image plate et meme image longue
 - Corriger le fait que la croix et menu ne parte pas en full screen
-- Changer image du About
 - Rendre l'image de fond déroulante sous tout le reste
 -----------------------------
 - Lien "Learn more" Data 
+- Lien "Learn more" Software
+- Lien "Learn more" MLOps
 - Compléter section : services / software dev 
-- Compléter la section Google form
+- Créer les pages Sport / Art / Science
 - Section "Other hobbies and passions" / Ajouter un lien vers une autre page 
 
 ## Developer Notes
