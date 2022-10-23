@@ -12,11 +12,10 @@ Alexandre Cruel's personal portfolio.
 - Corriger le fait que la croix et menu ne parte pas en full screen 
 -----------------------------
 2)
-- Cleaning du CSS avec link validation
-- Cleaning du HTML avec link validation
 - Image de fond qui déroule en arrière plan (effet parallaxe)
 - Corriger liens hobbies pour aller aux Section h2 précises dans la page hobbies.html
 - Alignement Go back to top contact et download CV
+- Corriger erreur de "Element i not allowed as child of element ul in this context."
 -----------------------------
 3)
 - Deployment du site ? 
