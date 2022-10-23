@@ -11,7 +11,7 @@ html{
 body{
     background: #080808;
     color: #fff; 
-    background-image: url(images/back.jpg);
+    background-image: url(images/background.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -85,11 +85,11 @@ nav ul li a:hover::after{
 }
 
 
-/* ------- about --------- */
+/* ------- About Me --------- */
 
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #fff;
 }
 
 .row{
@@ -162,7 +162,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* --------- services ---------------- */
+/* --------- Work Experience ---------------- */
 
 #services{
     padding: 30px 0;
@@ -207,7 +207,7 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-/* --------- mywork ---------------- */
+/* --------- Other hobbies and passions ---------------- */
 
 #mywork{
     padding: 50px 0;
@@ -294,7 +294,7 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-/* ------------ contact ---------------- */
+/* ------------ Contact Me ---------------- */
 
 .contact-left{
     margin: auto;

@@ -8,19 +8,17 @@ Alexandre Cruel's personal portfolio.
 [Used for background management](https://www.codeur.com/tuto/css/effet-parallaxe-css/#:~:text=L'effet%20de%20parallaxe%20en,'exploration%20de%20l'utilisateur.)
 
 ## TODO list
-
+1)
 - Corriger le fait que la croix et menu ne parte pas en full screen 
 -----------------------------
-- Lien "Learn more" Data 
-- Lien "Learn more" Software
-- Lien "Learn more" MLOps
-- Compléter section : services / software dev 
-- Créer pages Sport / Art / Science
-- Section "Other hobbies and passions" / Ajouter un lien vers une autre page 
+2)
 - Cleaning du CSS avec link validation
 - Cleaning du HTML avec link validation
-- Rapeticir image fusée dans HOBBIES
 - Image de fond qui déroule en arrière plan (effet parallaxe)
+- Corriger liens hobbies pour aller aux Section h2 précises dans la page hobbies.html
+- Alignement Go back to top contact et download CV
+-----------------------------
+3)
 - Deployment du site ? 
 
 
