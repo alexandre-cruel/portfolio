@@ -4,20 +4,15 @@ Alexandre Cruel's personal portfolio.
 
 ## Resources
 
-[Used this tutorial to get started](https://www.youtube.com/watch?v=qz0aGYrrlhU)
+[Used this tutorial to get started](https://youtu.be/0YFrGy_mzjY)
 [Used for background management](https://www.codeur.com/tuto/css/effet-parallaxe-css/#:~:text=L'effet%20de%20parallaxe%20en,'exploration%20de%20l'utilisateur.)
+[Website for icons](https://fontawesome.com/icons)
 
 ## TODO list
-1)
-- Corriger le fait que la croix et menu ne parte pas en full screen 
------------------------------
-2)
+- Améliorer la page hobby avec images et liens
+- Ajouter partie responsive à la page hobby
 - Image de fond qui déroule en arrière plan (effet parallaxe)
-- Corriger liens hobbies pour aller aux Section h2 précises dans la page hobbies.html
-- Alignement Go back to top contact et download CV
 - Corriger erreur de "Element i not allowed as child of element ul in this context."
------------------------------
-3)
 - Deployment du site ? 
 
 
@@ -57,3 +52,8 @@ Alexandre Cruel's personal portfolio.
 - Si le `git push` se bloque, rouler `git config --global core.askpass "git-gui--askpass"`
 
 - [Website used for pictures](https://unsplash.com/s/photos/portfolio)
+
+
+## Diff from tutorial
+
+- "grid-gap" is deprecated so I'm using "gap"
