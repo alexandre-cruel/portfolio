@@ -9,11 +9,7 @@ Alexandre Cruel's personal portfolio.
 [Website for icons](https://fontawesome.com/icons)
 
 ## TODO list
-- Améliorer la page hobby avec images et liens
-- Ajouter partie responsive à la page hobby
-- Image de fond qui déroule en arrière plan (effet parallaxe)
-- Corriger erreur de "Element i not allowed as child of element ul in this context."
-- Deployment du site ? 
+- Deployment du site ?
 
 
 ## Developer Notes
