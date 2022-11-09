@@ -55,3 +55,9 @@ It is deployed using the free version of GitHub Pages.
 ## Diff from tutorial
 
 - "grid-gap" is deprecated so I'm using "gap"
+
+## TODO 
+- PHONE / Taille entre photo et titre
+- PHONE + PC / Mettre une indication que les images Hobbies sont clicable
+- PHONE / Revoir le placement de la section contact
+- PHONE / Ajuster le placement du background sur la gauche de l'image avec l'arbre
