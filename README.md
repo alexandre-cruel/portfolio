@@ -7,9 +7,7 @@ Alexandre Cruel's personal portfolio.
 [Used this tutorial to get started](https://youtu.be/0YFrGy_mzjY)
 [Used for background management](https://www.codeur.com/tuto/css/effet-parallaxe-css/#:~:text=L'effet%20de%20parallaxe%20en,'exploration%20de%20l'utilisateur.)
 [Website for icons](https://fontawesome.com/icons)
-
-## TODO list
-- Deployment du site ?
+[Link to website deployment](https://www.geeksforgeeks.org/how-to-create-and-deploy-your-portfolio-in-under-10-minutes/)
 
 
 ## Developer Notes
