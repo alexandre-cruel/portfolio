@@ -1,0 +1,11 @@
+
+body{
+    background: #080808;
+    color: #fff; 
+    background-image: url(/images/background-subpages.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
