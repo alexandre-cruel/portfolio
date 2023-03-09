@@ -2,6 +2,11 @@
 
 Alexandre Cruel's personal portfolio.
 
+## Usage
+This portfolio is accesible from this [domain](https://alexandre-cruel.github.io/portfolio/).
+It has been developped using HTML5, CSS3 and JavaScript.
+It is deployed using the free version of GitHub Pages.
+
 ## Resources
 
 [Used this tutorial to get started](https://youtu.be/0YFrGy_mzjY)
@@ -14,8 +19,10 @@ Alexandre Cruel's personal portfolio.
 
 - Use VSCode `Live Server` plugin for debugging
 - Use `Prettier` plugin for readability of HTML
-
+- Use `Command` + `MAJ` + `V` to view README in 
+- To run the portfolio locally : right click / Open with Live Server.
 - To run it locally : right click / Open with Live Server.
+
 
 - To format the code:
 
@@ -51,3 +58,13 @@ Alexandre Cruel's personal portfolio.
 ## Diff from tutorial
 
 - "grid-gap" is deprecated so I'm using "gap"
+
+## TODO 
+- PHONE / Taille entre photo et titre
+- PHONE + PC / Mettre une indication que les images Hobbies sont clicable
+- PHONE / Revoir le placement de la section contact
+- PHONE / Ajuster le placement du background sur la gauche de l'image avec l'arbre
+- Link la page de Hobby avec le main 
+- Améliorer la page de hobby pour la rendre plus belle
+- Ajouter du contenu à la page de hobby
+
