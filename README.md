@@ -1,6 +1,7 @@
 # portfolio
 
 Alexandre Cruel's personal portfolio.
+
 ## Usage
 This portfolio is accesible from this [domain](https://alexandre-cruel.github.io/portfolio/).
 It has been developped using HTML5, CSS3 and JavaScript.
@@ -20,6 +21,8 @@ It is deployed using the free version of GitHub Pages.
 - Use `Prettier` plugin for readability of HTML
 - Use `Command` + `MAJ` + `V` to view README in 
 - To run the portfolio locally : right click / Open with Live Server.
+- To run it locally : right click / Open with Live Server.
+
 
 - To format the code:
 
@@ -64,3 +67,4 @@ It is deployed using the free version of GitHub Pages.
 - Link la page de Hobby avec le main 
 - Améliorer la page de hobby pour la rendre plus belle
 - Ajouter du contenu à la page de hobby
+
