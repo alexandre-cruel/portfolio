@@ -18,8 +18,8 @@ It is deployed using the free version of GitHub Pages.
 
 - Use VSCode `Live Server` plugin for debugging
 - Use `Prettier` plugin for readability of HTML
-
-- To run it locally : right click / Open with Live Server.
+- Use `Command` + `MAJ` + `V` to view README in 
+- To run the portfolio locally : right click / Open with Live Server.
 
 - To format the code:
 
@@ -61,3 +61,6 @@ It is deployed using the free version of GitHub Pages.
 - PHONE + PC / Mettre une indication que les images Hobbies sont clicable
 - PHONE / Revoir le placement de la section contact
 - PHONE / Ajuster le placement du background sur la gauche de l'image avec l'arbre
+- Link la page de Hobby avec le main 
+- Améliorer la page de hobby pour la rendre plus belle
+- Ajouter du contenu à la page de hobby
