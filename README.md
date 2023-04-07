@@ -64,7 +64,7 @@ It is deployed using the free version of GitHub Pages.
 - PHONE + PC / Mettre une indication que les images Hobbies sont clicable
 - PHONE / Revoir le placement de la section contact
 - PHONE / Ajuster le placement du background sur la gauche de l'image avec l'arbre
-- Link la page de Hobby avec le main 
 - Améliorer la page de hobby pour la rendre plus belle
 - Ajouter du contenu à la page de hobby
-
+- Link la page de Hobby avec le main 
+- Changer ma photo de profil
