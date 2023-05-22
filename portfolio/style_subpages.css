@@ -1,11 +1,81 @@
-
-body{
+body {
     background: #080808;
-    color: #fff; 
+    color: #fff;
     background-image: url(/images/background-subpages.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  
+  ul li::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff004f;
+  }
+  
+  .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
 }
+  
+  .btn:hover {
+    background-color: #d6003d;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 28px;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+    
+    .container {
+      padding: 10px;
+    }
+  }
+  
