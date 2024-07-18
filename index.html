@@ -29,7 +29,7 @@
                 </nav>
                 <div class="header-text">
                     <p>Machine Learning Engineer</p>
-                    <h1>Hi I'm <span> Alexandre Cruel </span>  <br>  currently located in Montreal.</h1>
+                    <h1>Hi I'm <span> Alexandre Cruel </span>  <br>  currently located in Montpellier.</h1>
 
                 </div>
             </div>
@@ -43,8 +43,12 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p> I'm currently working at MoovAI as a Machine Learning Engineer and I've been working as an ML Engineer at National Bank of Canada for 4 years before that. <br>
-                            I'm continuing my AI and data journey to learn more and apply this knowledge on various use cases.
+                        <p> I'm currently working at Lalilo, Paris as a Machine Learning Engineer.
+                            I started my career as a Data Engineer in the AI Factory of the National Bank of Canada in Montreal where I've developped automated data pipelines and deployed AI models in production. <br>
+                            My role was to democratize AI and to operationalize AI models with high quality standards: automation, monitoring, security, scalability. <br>
+                            After 4 wonderful years at the National Bank of Canada, I've decided to join MoovAI, Montreal as an ML Engineer. After credit cards, fraud and other risk models, I've decided to work on other AI subjects to broaden my knowledge. <br>
+                            I then then decided to come back to France and joined Neovision, Grenoble to discover other AI Computer Vision applications. <br>
+                            Now at Lalilo, I'm working on Natural Language Understanding and Social Recommendation System and learning about the EdTech industry. <br>
                         </p>
                         <p> I've been working as an ML Engineer in an Artificial Intelligence team at the National Bank for 3+ years and I'm continuing my AI and data
                             journey to learn more and apply this knowledge on various use cases.</p>
@@ -85,12 +89,13 @@
                                     <br> - Cloud: GCP & AWS 
                                     <br> - CICD: Docker, Kubernetes, Jenkins
                                     <br> - DevOps </li>
-                                <li><span>Languages & Frameworks</span> <br> Python / Java / Terraform / C++ / Web </li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>February 2023 - Today </span> <br> Machine Learning Engineer, MoovAI</li>
+                                <li><span>September 2024 - Current</span> <br> Machine Learning Engineer, Lalilo</li>
+                                <li><span>July 2023 - August 2024 </span> <br> Machine Learning Engineer - Information System Lead, Neovision</li>
+                                <li><span>February 2023 - June 2023 </span> <br> Machine Learning Engineer, MoovAI</li>
                                 <li><span>June 2021 - February 2023 </span> <br> Senior ML Engineer, National Bank of Canada</li>
                                 <li><span>June 2021 - Current</span> <br> Senior ML Engineer, National Bank of Canada</li>
                                 <li><span> April 2019 - June 2021</span> <br> ML Engineer, National Bank of Canada</li>
@@ -118,7 +123,8 @@
                         <p>
                             - Curious to build new applications. <br>
                             - Micro-services mindset. <br>
-                            - DevOps culture.
+                            - DevOps culture. <br>
+                            - Driven by the will to improve stuff and meet user needs.
                         </p>
                     </div>
                     <div>
@@ -128,6 +134,7 @@
                             - Democratize artificial intelligence. <br>
                             - Provisioning of AI development environment. <br>
                             - Operationalization of AI models.
+                            - Ethical AI. <br>
                         </p>
                     </div>
                     <div>
@@ -136,11 +143,25 @@
                         <p> 
                             - Building data pipelines on AWS or GCP. <br>
                             - Creation of automated low-latency ETLs. <br>
-                            - Developping and designing a data quality tool. <br>
+                            - Developping and designing data quality tools. <br>
                             - Data Governance. <br>
                             - Security of data at rest and in transit. 
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Soft Skills -->
+        <div id="soft-skills">
+            <div class="container">
+                <h1 class="sub-title">Soft Skills</h1>
+                <div class="skills-list">
+                    <div class="bubble">Communication</div>
+                    <div class="bubble">Teamwork</div>
+                    <div class="bubble">Problem Solving</div>
+                    <div class="bubble">Adaptability</div>
+                    <div class="bubble">Creativity</div>
+                    <div class="bubble">Leadership</div>
                 </div>
             </div>
         </div>
@@ -204,34 +225,95 @@
 
 
 <!-- JS -->
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+
+        function openmenu(){
+            sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
 
-<script>
-    var sidemenu = document.getElementById("sidemenu");
+    </script>
 
+    <!-- Bubbles -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const bubbles = document.querySelectorAll(".bubble");
+            const container = document.querySelector(".skills-list");
+            const containerRect = container.getBoundingClientRect();
+            
+            bubbles.forEach(bubble => {
+                // Initialize random positions and velocities
+                bubble.style.left = `${Math.random() * (containerRect.width - bubble.offsetWidth)}px`;
+                bubble.style.top = `${Math.random() * (containerRect.height - bubble.offsetHeight)}px`;
+                bubble.dataset.vx = (Math.random() * 2 - 1) * 2; // Random velocity x
+                bubble.dataset.vy = (Math.random() * 2 - 1) * 2; // Random velocity y
+            });
 
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
+            function moveBubbles() {
+                bubbles.forEach(bubble => {
+                    const rect = bubble.getBoundingClientRect();
+                    let vx = parseFloat(bubble.dataset.vx);
+                    let vy = parseFloat(bubble.dataset.vy);
 
-</script>
+                    // Check for collision with container walls
+                    if (rect.left + vx < containerRect.left) {
+                        vx = Math.abs(vx);
+                    } else if (rect.right + vx > containerRect.right) {
+                        vx = -Math.abs(vx);
+                    }
+
+                    if (rect.top + vy < containerRect.top) {
+                        vy = Math.abs(vy);
+                    } else if (rect.bottom + vy > containerRect.bottom) {
+                        vy = -Math.abs(vy);
+                    }
+
+                    // Check for collision with other bubbles
+                    bubbles.forEach(otherBubble => {
+                        if (bubble !== otherBubble) {
+                            const otherRect = otherBubble.getBoundingClientRect();
+                            if (rect.left < otherRect.right &&
+                                rect.right > otherRect.left &&
+                                rect.top < otherRect.bottom &&
+                                rect.bottom > otherRect.top) {
+                                vx = -vx;
+                                vy = -vy;
+                            }
+                        }
+                    });
+
+                    bubble.style.left = `${rect.left + vx - containerRect.left}px`;
+                    bubble.style.top = `${rect.top + vy - containerRect.top}px`;
+                    bubble.dataset.vx = vx;
+                    bubble.dataset.vy = vy;
+                });
+
+                requestAnimationFrame(moveBubbles);
+            }
+
+            moveBubbles();
+        });
+    </script>
 
     </body>
 </html>
