@@ -53,9 +53,9 @@
                         <p> I've been working as an ML Engineer in an Artificial Intelligence team at the National Bank for 3+ years and I'm continuing my AI and data
                             journey to learn more and apply this knowledge on various use cases.</p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                            <p class="tab-links" onclick="opentab('education', event)">Education</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
@@ -70,6 +70,8 @@
                                     <br> - Computer Vision models
                                     <br> - Social Recommendation System
                                     <br> - Natural Language Understanding
+                                    <br> - AI Ethics
+                                    <br> - MLOps
                                 </li>
                                 <li><span>Software Development</span> 
                                     <br> - Cloud: GCP / AWS / Openshift
@@ -93,11 +95,10 @@
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>September 2024 - Current</span> <br> Machine Learning Engineer, Lalilo</li>
+                                <li><span>September 2024 - Today</span> <br> Machine Learning Engineer, Lalilo</li>
                                 <li><span>July 2023 - August 2024 </span> <br> Machine Learning Engineer - Information System Lead, Neovision</li>
                                 <li><span>February 2023 - June 2023 </span> <br> Machine Learning Engineer, MoovAI</li>
                                 <li><span>June 2021 - February 2023 </span> <br> Senior ML Engineer, National Bank of Canada</li>
-                                <li><span>June 2021 - Current</span> <br> Senior ML Engineer, National Bank of Canada</li>
                                 <li><span> April 2019 - June 2021</span> <br> ML Engineer, National Bank of Canada</li>
                                 <li><span>Sep 2019 - April 2019</span> <br> Artificial Intelligence Intern, National Bank of Canada</li>
                             </ul>
@@ -259,17 +260,32 @@
         document.addEventListener("DOMContentLoaded", () => {
             const bubbles = document.querySelectorAll(".bubble");
             const container = document.querySelector(".skills-list");
-            const containerRect = container.getBoundingClientRect();
-            
-            bubbles.forEach(bubble => {
-                // Initialize random positions and velocities
+
+            // Function to generate a random color
+            function getRandomColor() {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            // Function to set initial position and velocity of bubbles
+            function setBubbleInitialPosition(bubble, containerRect) {
                 bubble.style.left = `${Math.random() * (containerRect.width - bubble.offsetWidth)}px`;
                 bubble.style.top = `${Math.random() * (containerRect.height - bubble.offsetHeight)}px`;
-                bubble.dataset.vx = (Math.random() * 2 - 1) * 2; // Random velocity x
-                bubble.dataset.vy = (Math.random() * 2 - 1) * 2; // Random velocity y
-            });
+                bubble.dataset.vx = (Math.random() * 2 - 1) * 0.5; // Reduced velocity x
+                bubble.dataset.vy = (Math.random() * 2 - 1) * 0.5; // Reduced velocity y
 
+                // Assign a random color to each bubble
+                bubble.style.backgroundColor = getRandomColor();
+            }
+
+            // Function to move bubbles on each animation frame
             function moveBubbles() {
+                const containerRect = container.getBoundingClientRect();
+
                 bubbles.forEach(bubble => {
                     const rect = bubble.getBoundingClientRect();
                     let vx = parseFloat(bubble.dataset.vx);
@@ -311,8 +327,33 @@
                 requestAnimationFrame(moveBubbles);
             }
 
+            // Function to move the bubble when clicked
+            function moveBubbleOnClick(event) {
+                const bubble = event.currentTarget;
+                const containerRect = container.getBoundingClientRect();
+                
+                // Set a new random velocity
+                bubble.dataset.vx = (Math.random() * 2 - 1) * 1; // Increased velocity x
+                bubble.dataset.vy = (Math.random() * 2 - 1) * 1; // Increased velocity y
+
+                // Move the bubble to a new random position
+                bubble.style.left = `${Math.random() * (containerRect.width - bubble.offsetWidth)}px`;
+                bubble.style.top = `${Math.random() * (containerRect.height - bubble.offsetHeight)}px`;
+            }
+
+            // Set initial positions and add click event listener to each bubble
+            const containerRect = container.getBoundingClientRect();
+            bubbles.forEach(bubble => {
+                setBubbleInitialPosition(bubble, containerRect);
+                bubble.addEventListener('click', moveBubbleOnClick);
+            });
+
             moveBubbles();
         });
+
+
+
+
     </script>
 
     </body>
