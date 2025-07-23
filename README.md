@@ -20,6 +20,36 @@ It is deployed using the free version of GitHub Pages.
 [Website for icons](https://fontawesome.com/icons)
 [Link to website deployment](https://www.geeksforgeeks.org/how-to-create-and-deploy-your-portfolio-in-under-10-minutes/)
 
+## Deployment
+
+1. Create a New Tag Locally
+   Choose a new tag version (e.g., v1.2.0):
+
+```shell
+git tag v2.0.1
+git push origin v2.0.1
+```
+
+You can view existing tags with git tag.
+
+2. Create a Release on GitHub
+
+   - Go to your repo: https://github.com/alexandre-cruel/portfolio
+   - Click on "Releases" (right sidebar or under "Code").
+   - Click "Draft a new release".
+   - In the "Tag version", select v2.0.1 (should be available after push).
+
+Fill in:
+
+- Release title (e.g., Portfolio Update - July 2025)
+- Description (optional: list key changes or fixes).
+- Click "Publish release".
+
+3. Verify the Deployment
+   If Using GitHub Pages:
+   Navigate to your site URL: https://your-username.github.io/your-repo-name
+   Refresh with Ctrl+Shift+R (force reload) to clear cache.
+
 ## Developer Notes
 
 - Use `Prettier` plugin for readability of HTML
