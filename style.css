@@ -295,77 +295,190 @@ nav ul li a:hover::after{
     transform: translateY(-2px);
 }
 
-/* --------- Other hobbies and passions ---------------- */
+/* --------- Beyond the Code (Personal Hobbies Preview) ---------------- */
 
 #mywork{
-    padding: 50px 0;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #0f0f23 100%);
+    position: relative;
 }
 
-.work-list{
+#mywork::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="0.5" fill="%23ffffff" opacity="0.1"/><circle cx="80" cy="40" r="0.3" fill="%23ff004f" opacity="0.2"/><circle cx="60" cy="80" r="0.4" fill="%234fc3f7" opacity="0.15"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)"/></svg>');
+    pointer-events: none;
+}
+
+.hobbies-preview {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 2fr 1fr;
     gap: 40px;
     margin-top: 50px;
+    position: relative;
+    z-index: 1;
 }
 
-.work{
-    border-radius: 10px;
+.hobby-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
 }
 
-.work img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-    border-radius: 10px;
+.hobby-card::before {
+    content: '';
     position: absolute;
+    top: 0;
     left: 0;
+    right: 0;
     bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
+    background: linear-gradient(135deg, rgba(79, 195, 247, 0.03), rgba(255, 0, 79, 0.03));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none; /* This ensures the overlay doesn't block clicks */
 }
 
-.layer h3{
-    font-weight: 500;
+.hobby-card:hover::before {
+    opacity: 1;
+}
+
+.hobby-card:hover {
+    transform: translateY(-15px);
+    border-color: rgba(79, 195, 247, 0.3);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.hobby-icon {
+    font-size: 60px;
     margin-bottom: 20px;
+    display: block;
+    pointer-events: none; /* Prevent icon from blocking clicks */
 }
 
-.layer a{
-    margin-top: 20px;
-    color: #ff004f;
+.hobby-card h3 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 600;
+    pointer-events: none; /* Prevent title from blocking clicks */
+}
+
+.hobby-card p {
+    font-size: 16px;
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    pointer-events: none; /* Prevent paragraph from blocking clicks */
+}
+
+.preview-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    pointer-events: none; /* Prevent tags container from blocking clicks */
+}
+
+.preview-tag {
+    background: rgba(79, 195, 247, 0.15);
+    color: #4fc3f7;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(79, 195, 247, 0.3);
+    transition: all 0.3s ease;
+    pointer-events: auto; /* Tags can be clicked if needed */
+}
+
+.preview-tag:hover {
+    background: rgba(79, 195, 247, 0.25);
+    transform: translateY(-2px);
+}
+
+.explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #ff004f, #4fc3f7);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; /* pour que ce soit un rond */
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 16px;
+    cursor: pointer; /* Ensure cursor shows as pointer */
+    position: relative;
+    z-index: 10; /* Ensure button is above other elements */
+    pointer-events: auto; /* Explicitly enable pointer events */
+}
+
+.explore-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 0, 79, 0.3);
+    cursor: pointer; /* Ensure cursor shows as pointer on hover */
+}
+
+.explore-btn i {
+    transition: transform 0.3s ease;
+}
+
+.explore-btn:hover i {
+    transform: translateX(5px);
+}
+
+.quick-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 25px 20px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
-.work:hover img,
-.work.touch img {
-  transform: scale(1.1);
+.stat-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(79, 195, 247, 0.2);
+    background: rgba(255, 255, 255, 0.06);
 }
 
-.work:hover .layer,
-.work.touch .layer {
-  height: 100%;
+.stat-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4fc3f7;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #b0b0b0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn{
@@ -574,6 +687,64 @@ nav .fas{
     
     #soft-skills .sub-title {
         font-size: 40px;
+    }
+    
+    /* Mobile responsive for Hobbies Preview section */
+    .hobbies-preview {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .hobby-card {
+        padding: 30px 20px;
+    }
+    
+    .hobby-icon {
+        font-size: 50px;
+    }
+    
+    .hobby-card h3 {
+        font-size: 24px;
+    }
+    
+    .hobby-card p {
+        font-size: 14px;
+    }
+    
+    .preview-tags {
+        gap: 8px;
+    }
+    
+    .preview-tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .explore-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    
+    .quick-stats {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 15px;
+    }
+    
+    .stat-item {
+        padding: 20px 15px;
+    }
+    
+    .stat-icon {
+        font-size: 24px;
+    }
+    
+    .stat-number {
+        font-size: 18px;
+    }
+    
+    .stat-label {
+        font-size: 10px;
     }
 }
 

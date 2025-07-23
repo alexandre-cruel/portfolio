@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.0] - 2025-07-23
+
+### Added
+
+- Integrated the leaderboard format page for the hobbies.
+
+### Updated
+
+- Reworked the About paragraph section with an improved structure. [@alexandre-cruel](https://github.com/alexandre-cruel)
+- Re-organized the skills list and span visual.
+- Updated the Core Expertise section using a more modern look.
+- Removed the funny bubbles from the soft skills section to use a more modern crystal view.
+- Updated the Hobbies section.
+
 ## [1.1.1] - 2024-08-14
 
 ### Updated
