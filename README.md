@@ -58,11 +58,3 @@ It is deployed using the free version of GitHub Pages.
 ## Diff from tutorial
 
 - "grid-gap" is deprecated so I'm using "gap"
-
-## TODO
-
-- Ajouter du contenu à la page de hobby
-- Link la page de Hobby avec le main
-- Améliorer lisibilité de About Me avec le nouveau background
-- Ajouter chaine YouTube lien
-- Ajouter petites features fun
