@@ -4,7 +4,7 @@ Alexandre Cruel's personal portfolio.
 
 ## Usage
 
-This portfolio is accesible from this [domain](https://alexandre-cruel.github.io/portfolio/).
+This portfolio is accessible from this [domain](https://alexandre-cruel.github.io/portfolio/).
 It has been developped using HTML5, CSS3 and JavaScript.
 It is deployed using the free version of GitHub Pages.
 

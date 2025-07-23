@@ -1,360 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="HTML, CSS">
-        <meta name="description" content="This is the portfolio of Alexandre Cruel, Machine Learning Engineer.">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Alex Cruel Personal Portfolio Website</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/6d0abaf34a.js" crossorigin="anonymous"></script>
-        <link rel="shortcut icon" type="images/favicon.png" href="images/favicon.png">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta
+      name="description"
+      content="This is the portfolio of Alexandre Cruel, Machine Learning Engineer."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Alex Cruel Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6d0abaf34a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      type="images/favicon.png"
+      href="images/favicon.png"
+    />
+  </head>
 
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/profile.png" alt="My profile picture" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Work Experience</a></li>
-                        <li><a href="#mywork">Other hobbies and passions</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-align-justify" onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text">
-                    <p>Machine Learning Engineer</p>
-                    <h1>Hi I'm <span> Alexandre Cruel </span>  <br>  currently located in Montpellier.</h1>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/profile.png" alt="My profile picture" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Work Experience</a></li>
+            <li><a href="#mywork">Other hobbies and passions</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-align-justify" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Machine Learning Engineer</p>
+          <h1>
+            Hi, <br />
+            I'm <span> Alexandre Cruel </span> <br />
+            located in Montpellier, <br />
+            working for Lalilo.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- About Me -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpeg" alt="This is me" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm currently working at Lalilo, Paris as a Machine Learning
+              Engineer, where I'm building data loading and transformation
+              pipelines to maintain the product data platform. I'm also working
+              on cutting-edge Speech AI models for children's voices, Natural
+              Language Understanding, and Social Recommendation Systems while
+              learning about the EdTech industry.
+            </p>
+            <br />
+            <p>
+              I started my career as a Data Engineer in the AI Factory of the
+              National Bank of Canada in Montreal, where I developed automated
+              data pipelines and deployed AI models in production. My role was
+              to democratize AI and operationalize AI models with high quality
+              standards: automation, monitoring, security, and scalability.
+            </p>
+            <br />
+            <p>
+              After 4 wonderful years at the National Bank of Canada, I decided
+              to broaden my knowledge by joining MoovAI, Montreal as an ML
+              Engineer. Moving beyond credit cards, fraud, and risk models, I
+              explored other AI subjects to expand my expertise.
+            </p>
+            <br />
+            <p>
+              I then decided to return to France and joined Neovision, Grenoble,
+              where I discovered exciting AI Computer Vision applications before
+              ultimately joining my current role at Lalilo.
+            </p>
+            <p>
+              I've been working as a Data and ML Engineer in an Artificial
+              Intelligence team for 7+ years now and I'm continuing my AI and
+              data journey to learn more and apply this knowledge on various use
+              cases for ethical, responsible and purposeful projects.
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills', event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience', event)">
+                Experiences
+              </p>
+              <p class="tab-links" onclick="opentab('education', event)">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span> Data Engineering</span> <br />
+                  - Data Pipelines architectural design <br />
+                  - Batch and Stream processing (Spark, Kafka) <br />
+                  - Serverless services<br />
+                  - SQL <br />
+                  - Data strategies : Data Mesh / Data Warehousing / Data Lake
+                </li>
+                <li>
+                  <span>Artificial Intelligence</span> <br />
+                  - Speech AI models <br />
+                  - ML credit cards, fraud or risk models <br />
+                  - Computer Vision models <br />
+                  - Social Recommendation System <br />
+                  - Natural Language Understanding <br />
+                  - AI Ethics <br />
+                  - MLOps (MLFlow, DVC, etc.)
+                </li>
+                <li>
+                  <span>Languages & Frameworks</span> <br />
+                  Python / Java / Terraform / C++ / Go / Javascript / Web
+                </li>
+                <li>
+                  <span>Software Development</span> <br />
+                  - Cloud: GCP, AWS, Snowflake, Microsoft AzureAI, Openshift
+                  <br />
+                  - CICD: GH Actions, Docker, Kubernetes, Jenkins <br />
+                  - DevOps best practices <br />
+                  - Testing
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>September 2024 - Today</span> <br />
+                  Machine Learning Engineer, Lalilo
+                </li>
+                <li>
+                  <span>July 2023 - August 2024 </span> <br />
+                  Machine Learning Engineer - Information System Lead, Neovision
+                </li>
+                <li>
+                  <span>February 2023 - June 2023 </span> <br />
+                  Machine Learning Engineer, MoovAI
+                </li>
+                <li>
+                  <span>June 2021 - February 2023 </span> <br />
+                  Senior ML Engineer, National Bank of Canada
+                </li>
+                <li>
+                  <span> April 2019 - June 2021</span> <br />
+                  ML Engineer, National Bank of Canada
+                </li>
+                <li>
+                  <span>Sep 2019 - April 2019</span> <br />
+                  Artificial Intelligence Intern, National Bank of Canada
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2014-2019</span> <br />
+                  Diplôme d'ingénieur en Big Data and AI, ESME Sudria
+                </li>
+                <li>
+                  <span>2014</span> <br />
+                  Baccalaureat Scientifique - Mention Bien, Lycée Berthollet
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Work Experience -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Work Experience</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Software Development</h2>
+            <p>
+              - Curious to build new applications. <br />
+              - Micro-services mindset. <br />
+              - DevOps culture. <br />
+              - Driven by the will to improve stuff and meet user needs.
+            </p>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-mug-hot"></i>
+            <h2>ML Ops</h2>
+            <p>
+              - Democratize artificial intelligence. <br />
+              - Provisioning of AI development environment. <br />
+              - Operationalization of AI models. - Ethical AI. <br />
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Data</h2>
+            <p>
+              - Building data pipelines on AWS or GCP. <br />
+              - Creation of automated low-latency ETLs. <br />
+              - Developping and designing data quality tools. <br />
+              - Data Governance. <br />
+              - Security of data at rest and in transit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Soft Skills -->
+    <div id="soft-skills">
+      <div class="container">
+        <h1 class="sub-title">Soft Skills</h1>
+        <div class="skills-list">
+          <div class="bubble">Communication</div>
+          <div class="bubble">Teamwork</div>
+          <div class="bubble">Problem Solving</div>
+          <div class="bubble">Adaptability</div>
+          <div class="bubble">Creativity</div>
+          <div class="bubble">Leadership</div>
+        </div>
+      </div>
+    </div>
+    <!-- Other hobbies and passions -->
+    <div id="mywork">
+      <div class="container">
+        <h1 class="sub-title">Other hobbies and passions</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/run1.jpg" alt="Running shoes image" />
+            <div class="layer">
+              <h3>Sport</h3>
+              <p>Running - Crossfit - Skiing - Hiking</p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/saxo2.jpg" alt="Saxophone player" />
+            <div class="layer">
+              <h3>Art</h3>
+              <p>Saxophone - Drawing - Miniature Modeling</p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/science3.jpg" alt="Space shuttle" />
+            <div class="layer">
+              <h3>Tech & Science</h3>
+              <p>Basic Flying Pilote Licence - Quantum physics</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Go back on top</a>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i>
+              <a href="mailto:alexandre.crucru@gmail.com"
+                >alexandre.crucru@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-sharp fa-solid fa-square-phone"></i> +33 667928245
+            </p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/alexandre-cruel-3a89ab153/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/alexandre-cruel"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="images/CV-alexandre-cruel-2022.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Alexandre Cruel. Made with
+          <i class="fa-solid fa-heart"></i>.
+        </p>
+      </div>
+    </div>
 
-                </div>
-            </div>
-        </div>
-        <!-- About Me -->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/user.jpeg" alt="This is me">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p> I'm currently working at Lalilo, Paris as a Machine Learning Engineer.
-                            I started my career as a Data Engineer in the AI Factory of the National Bank of Canada in Montreal where I've developped automated data pipelines and deployed AI models in production. <br>
-                            My role was to democratize AI and to operationalize AI models with high quality standards: automation, monitoring, security, scalability. <br>
-                            After 4 wonderful years at the National Bank of Canada, I've decided to join MoovAI, Montreal as an ML Engineer. After credit cards, fraud and other risk models, I've decided to work on other AI subjects to broaden my knowledge. <br>
-                            I then then decided to come back to France and joined Neovision, Grenoble to discover other AI Computer Vision applications. <br>
-                            Now at Lalilo, I'm working on Natural Language Understanding and Social Recommendation System and learning about the EdTech industry. <br>
-                        </p>
-                        <p> I've been working as an ML Engineer in an Artificial Intelligence team at the National Bank for 3+ years and I'm continuing my AI and data
-                            journey to learn more and apply this knowledge on various use cases.</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
-                            <p class="tab-links" onclick="opentab('education', event)">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span> Data Engineering</span> 
-                                    <br> - Data Pipelines architectural design 
-                                    <br> - Batch and Stream processing (Spark, Kafka)
-                                    <br> - SQL
-                                    <br> - Data strategies : Data Mesh / Data Warehousing / Data Lake
-                                </li>
-                                <li><span>Artificial Intelligence</span> 
-                                    <br> - ML credit cards, fraud or risk models
-                                    <br> - Computer Vision models
-                                    <br> - Social Recommendation System
-                                    <br> - Natural Language Understanding
-                                    <br> - AI Ethics
-                                    <br> - MLOps
-                                </li>
-                                <li><span>Software Development</span> 
-                                    <br> - Cloud: GCP / AWS / Openshift
-                                    <br> - CICD: Docker, Kubernetes, Jenkins, GitHub Actions
-                                    <br> - DevOps best practices
-                                    <br> - Testing
-                                </li>
-                                <li><span>Languages & Frameworks</span> 
-                                    <br> Python / Java / Terraform / C++ / Go / Javascript / Web 
-                                </li>
-                                <li><span>Data Engineering</span> <br> Data Pipelines design / Spark / SQL</li>
-                                <li><span>Artificial Intelligence</span> 
-                                    <br> - ML credit cards, fraud or risk models
-                                    <br> - Social Recommendation System
-                                    <br> - Natural Language Understanding</li>
-                                <li><span>Software Development</span> 
-                                    <br> - Cloud: GCP & AWS 
-                                    <br> - CICD: Docker, Kubernetes, Jenkins
-                                    <br> - DevOps </li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>September 2024 - Today</span> <br> Machine Learning Engineer, Lalilo</li>
-                                <li><span>July 2023 - August 2024 </span> <br> Machine Learning Engineer - Information System Lead, Neovision</li>
-                                <li><span>February 2023 - June 2023 </span> <br> Machine Learning Engineer, MoovAI</li>
-                                <li><span>June 2021 - February 2023 </span> <br> Senior ML Engineer, National Bank of Canada</li>
-                                <li><span> April 2019 - June 2021</span> <br> ML Engineer, National Bank of Canada</li>
-                                <li><span>Sep 2019 - April 2019</span> <br> Artificial Intelligence Intern, National Bank of Canada</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2014-2019</span> <br> Diplôme d'ingénieur en Big Data and AI, ESME Sudria</li>
-                                <li><span>2014</span> <br> Baccalaureat Scientifique - Mention Bien, Lycée Berthollet</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Work Experience -->
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">Work Experience</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Software Development</h2>
-                        <p>
-                            - Curious to build new applications. <br>
-                            - Micro-services mindset. <br>
-                            - DevOps culture. <br>
-                            - Driven by the will to improve stuff and meet user needs.
-                        </p>
-                    </div>
-                    <div>
-                        <i class="fa-sharp fa-solid fa-mug-hot"></i>
-                        <h2>ML Ops</h2>
-                        <p>
-                            - Democratize artificial intelligence. <br>
-                            - Provisioning of AI development environment. <br>
-                            - Operationalization of AI models.
-                            - Ethical AI. <br>
-                        </p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-database"></i>
-                        <h2>Data</h2>
-                        <p> 
-                            - Building data pipelines on AWS or GCP. <br>
-                            - Creation of automated low-latency ETLs. <br>
-                            - Developping and designing data quality tools. <br>
-                            - Data Governance. <br>
-                            - Security of data at rest and in transit. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Soft Skills -->
-        <div id="soft-skills">
-            <div class="container">
-                <h1 class="sub-title">Soft Skills</h1>
-                <div class="skills-list">
-                    <div class="bubble">Communication</div>
-                    <div class="bubble">Teamwork</div>
-                    <div class="bubble">Problem Solving</div>
-                    <div class="bubble">Adaptability</div>
-                    <div class="bubble">Creativity</div>
-                    <div class="bubble">Leadership</div>
-                </div>
-            </div>
-        </div>
-        <!-- Other hobbies and passions -->
-        <div id="mywork">
-            <div class="container">
-                <h1 class="sub-title">Other hobbies and passions</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/run1.jpg" alt="Running shoes image">
-                        <div class="layer">
-                            <h3>Sport</h3>
-                            <p>
-                                Running - Crossfit - Skiing - Hiking
-                            </p>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/saxo2.jpg" alt="Saxophone player">
-                        <div class="layer">
-                            <h3>Art</h3>
-                            <p>
-                                Saxophone - Drawing - Miniature Modeling
-                            </p>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/science3.jpg" alt="Space shuttle">
-                        <div class="layer">
-                            <h3>Tech & Science</h3>
-                            <p>
-                                Basic Flying Pilote Licence - Quantum physics
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="btn">Go back on top</a>
-            </div>
-        </div>
-        <!-- Contact -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i> <a href="mailto:alexandre.crucru@gmail.com">alexandre.crucru@gmail.com</a> </p>
-                        <p><i class="fa-sharp fa-solid fa-square-phone"></i> +33 667928245</p>
-                        <p><i class="fa-sharp fa-solid fa-square-phone"></i> +1 5146006858</p>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/alexandre-cruel-3a89ab153/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/alexandre-cruel"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                        <a href="images/CV-alexandre-cruel-2022.pdf" download class="btn btn2">Download CV</a>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright © Alexandre Cruel. Made with <i class="fa-solid fa-heart"></i>.</p>
-            </div>
-        </div>
-
-
-<!-- JS -->
+    <!-- JS -->
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
 
     <script>
-        var sidemenu = document.getElementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
 
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
 
     <!-- Bubbles -->
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const bubbles = document.querySelectorAll(".bubble");
-            const container = document.querySelector(".skills-list");
+      document.addEventListener("DOMContentLoaded", () => {
+        const bubbles = document.querySelectorAll(".bubble");
+        const container = document.querySelector(".skills-list");
 
-            // Function to generate a random color
-            function getRandomColor() {
-                const letters = '0123456789ABCDEF';
-                let color = '#';
-                for (let i = 0; i < 6; i++) {
-                    color += letters[Math.floor(Math.random() * 16)];
+        // Function to generate a random color
+        function getRandomColor() {
+          const letters = "0123456789ABCDEF";
+          let color = "#";
+          for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        }
+
+        // Function to set initial position and velocity of bubbles
+        function setBubbleInitialPosition(bubble, containerRect) {
+          bubble.style.left = `${
+            Math.random() * (containerRect.width - bubble.offsetWidth)
+          }px`;
+          bubble.style.top = `${
+            Math.random() * (containerRect.height - bubble.offsetHeight)
+          }px`;
+          bubble.dataset.vx = (Math.random() * 2 - 1) * 0.5; // Reduced velocity x
+          bubble.dataset.vy = (Math.random() * 2 - 1) * 0.5; // Reduced velocity y
+
+          // Assign a random color to each bubble
+          bubble.style.backgroundColor = getRandomColor();
+        }
+
+        // Function to move bubbles on each animation frame
+        function moveBubbles() {
+          const containerRect = container.getBoundingClientRect();
+
+          bubbles.forEach((bubble) => {
+            const rect = bubble.getBoundingClientRect();
+            let vx = parseFloat(bubble.dataset.vx);
+            let vy = parseFloat(bubble.dataset.vy);
+
+            // Check for collision with container walls
+            if (rect.left + vx < containerRect.left) {
+              vx = Math.abs(vx);
+            } else if (rect.right + vx > containerRect.right) {
+              vx = -Math.abs(vx);
+            }
+
+            if (rect.top + vy < containerRect.top) {
+              vy = Math.abs(vy);
+            } else if (rect.bottom + vy > containerRect.bottom) {
+              vy = -Math.abs(vy);
+            }
+
+            // Check for collision with other bubbles
+            bubbles.forEach((otherBubble) => {
+              if (bubble !== otherBubble) {
+                const otherRect = otherBubble.getBoundingClientRect();
+                if (
+                  rect.left < otherRect.right &&
+                  rect.right > otherRect.left &&
+                  rect.top < otherRect.bottom &&
+                  rect.bottom > otherRect.top
+                ) {
+                  vx = -vx;
+                  vy = -vy;
                 }
-                return color;
-            }
-
-            // Function to set initial position and velocity of bubbles
-            function setBubbleInitialPosition(bubble, containerRect) {
-                bubble.style.left = `${Math.random() * (containerRect.width - bubble.offsetWidth)}px`;
-                bubble.style.top = `${Math.random() * (containerRect.height - bubble.offsetHeight)}px`;
-                bubble.dataset.vx = (Math.random() * 2 - 1) * 0.5; // Reduced velocity x
-                bubble.dataset.vy = (Math.random() * 2 - 1) * 0.5; // Reduced velocity y
-
-                // Assign a random color to each bubble
-                bubble.style.backgroundColor = getRandomColor();
-            }
-
-            // Function to move bubbles on each animation frame
-            function moveBubbles() {
-                const containerRect = container.getBoundingClientRect();
-
-                bubbles.forEach(bubble => {
-                    const rect = bubble.getBoundingClientRect();
-                    let vx = parseFloat(bubble.dataset.vx);
-                    let vy = parseFloat(bubble.dataset.vy);
-
-                    // Check for collision with container walls
-                    if (rect.left + vx < containerRect.left) {
-                        vx = Math.abs(vx);
-                    } else if (rect.right + vx > containerRect.right) {
-                        vx = -Math.abs(vx);
-                    }
-
-                    if (rect.top + vy < containerRect.top) {
-                        vy = Math.abs(vy);
-                    } else if (rect.bottom + vy > containerRect.bottom) {
-                        vy = -Math.abs(vy);
-                    }
-
-                    // Check for collision with other bubbles
-                    bubbles.forEach(otherBubble => {
-                        if (bubble !== otherBubble) {
-                            const otherRect = otherBubble.getBoundingClientRect();
-                            if (rect.left < otherRect.right &&
-                                rect.right > otherRect.left &&
-                                rect.top < otherRect.bottom &&
-                                rect.bottom > otherRect.top) {
-                                vx = -vx;
-                                vy = -vy;
-                            }
-                        }
-                    });
-
-                    bubble.style.left = `${rect.left + vx - containerRect.left}px`;
-                    bubble.style.top = `${rect.top + vy - containerRect.top}px`;
-                    bubble.dataset.vx = vx;
-                    bubble.dataset.vy = vy;
-                });
-
-                requestAnimationFrame(moveBubbles);
-            }
-
-            // Function to move the bubble when clicked
-            function moveBubbleOnClick(event) {
-                const bubble = event.currentTarget;
-                const containerRect = container.getBoundingClientRect();
-                
-                // Set a new random velocity
-                bubble.dataset.vx = (Math.random() * 2 - 1) * 1; // Increased velocity x
-                bubble.dataset.vy = (Math.random() * 2 - 1) * 1; // Increased velocity y
-
-                // Move the bubble to a new random position
-                bubble.style.left = `${Math.random() * (containerRect.width - bubble.offsetWidth)}px`;
-                bubble.style.top = `${Math.random() * (containerRect.height - bubble.offsetHeight)}px`;
-            }
-
-            // Set initial positions and add click event listener to each bubble
-            const containerRect = container.getBoundingClientRect();
-            bubbles.forEach(bubble => {
-                setBubbleInitialPosition(bubble, containerRect);
-                bubble.addEventListener('click', moveBubbleOnClick);
+              }
             });
 
-            moveBubbles();
+            bubble.style.left = `${rect.left + vx - containerRect.left}px`;
+            bubble.style.top = `${rect.top + vy - containerRect.top}px`;
+            bubble.dataset.vx = vx;
+            bubble.dataset.vy = vy;
+          });
+
+          requestAnimationFrame(moveBubbles);
+        }
+
+        // Function to move the bubble when clicked
+        function moveBubbleOnClick(event) {
+          const bubble = event.currentTarget;
+          const containerRect = container.getBoundingClientRect();
+
+          // Set a new random velocity
+          bubble.dataset.vx = (Math.random() * 2 - 1) * 1; // Increased velocity x
+          bubble.dataset.vy = (Math.random() * 2 - 1) * 1; // Increased velocity y
+
+          // Move the bubble to a new random position
+          bubble.style.left = `${
+            Math.random() * (containerRect.width - bubble.offsetWidth)
+          }px`;
+          bubble.style.top = `${
+            Math.random() * (containerRect.height - bubble.offsetHeight)
+          }px`;
+        }
+
+        // Set initial positions and add click event listener to each bubble
+        const containerRect = container.getBoundingClientRect();
+        bubbles.forEach((bubble) => {
+          setBubbleInitialPosition(bubble, containerRect);
+          bubble.addEventListener("click", moveBubbleOnClick);
         });
 
-
-
-
+        moveBubbles();
+      });
     </script>
-
-    </body>
+  </body>
 </html>
