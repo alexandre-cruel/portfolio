@@ -187,7 +187,7 @@ body {
 /* Stats Grid */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin-top: 30px;
 }
@@ -476,6 +476,13 @@ body {
     transform: rotate(-45deg);
 }
 
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .hero-section h1 {
@@ -502,7 +509,7 @@ body {
     }
     
     .stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
     
