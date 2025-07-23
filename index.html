@@ -187,37 +187,58 @@
     <!-- Work Experience -->
     <div id="services">
       <div class="container">
-        <h1 class="sub-title">Work Experience</h1>
+        <h1 class="sub-title">Core Expertise</h1>
+        <p class="section-description">
+          Bridging the gap between data science and production systems
+        </p>
         <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Software Development</h2>
+          <div class="service-card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h2>Machine Learning Engineering</h2>
             <p>
-              - Curious to build new applications. <br />
-              - Micro-services mindset. <br />
-              - DevOps culture. <br />
-              - Driven by the will to improve stuff and meet user needs.
+              Building and deploying ML models from research to production, with
+              focus on Speech AI, Computer Vision, and NLP systems that scale to
+              millions of users.
             </p>
+            <div class="tech-tags">
+              <span class="tag">MLOps</span>
+              <span class="tag">AI Model Deployment</span>
+              <span class="tag">Responsible and Ethical AI</span>
+            </div>
           </div>
-          <div>
-            <i class="fa-sharp fa-solid fa-mug-hot"></i>
-            <h2>ML Ops</h2>
+          <div class="service-card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h2>Data Engineering</h2>
             <p>
-              - Democratize artificial intelligence. <br />
-              - Provisioning of AI development environment. <br />
-              - Operationalization of AI models. - Ethical AI. <br />
+              Designing robust data architectures and real-time pipelines that
+              power AI systems, ensuring data quality, governance, and security
+              at enterprise scale.
             </p>
+            <div class="tech-tags">
+              <span class="tag">Data pipelines</span>
+              <span class="tag">Serverless Framework</span>
+              <span class="tag">Data Mesh</span>
+            </div>
           </div>
-          <div>
-            <i class="fa-solid fa-database"></i>
-            <h2>Data</h2>
+          <div class="service-card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <h2>Cloud & DevOps</h2>
             <p>
-              - Building data pipelines on AWS or GCP. <br />
-              - Creation of automated low-latency ETLs. <br />
-              - Developping and designing data quality tools. <br />
-              - Data Governance. <br />
-              - Security of data at rest and in transit.
+              Implementing modern cloud-native solutions with automated CI/CD
+              pipelines, containerization, and infrastructure as code for
+              reliable ML operations.
             </p>
+            <div class="tech-tags">
+              <span class="tag">GCP/AWS</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Terraform</span>
+            </div>
           </div>
         </div>
       </div>
@@ -226,13 +247,58 @@
     <div id="soft-skills">
       <div class="container">
         <h1 class="sub-title">Soft Skills</h1>
-        <div class="skills-list">
-          <div class="bubble">Communication</div>
-          <div class="bubble">Teamwork</div>
-          <div class="bubble">Problem Solving</div>
-          <div class="bubble">Adaptability</div>
-          <div class="bubble">Creativity</div>
-          <div class="bubble">Leadership</div>
+        <p class="section-description">The human side of technology</p>
+        <div class="soft-skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3>Communication</h3>
+            <p>
+              Clear technical communication across diverse teams and
+              stakeholders
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Teamwork</h3>
+            <p>Collaborative approach to complex AI and data challenges</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>Problem Solving</h3>
+            <p>
+              Analytical mindset for breaking down complex technical problems
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fa-solid fa-arrows-spin"></i>
+            </div>
+            <h3>Adaptability</h3>
+            <p>
+              Thriving in fast-paced tech environments and learning new
+              technologies
+            </p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3>Creativity</h3>
+            <p>Innovative approaches to AI solutions and data architecture</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="fa-solid fa-flag"></i>
+            </div>
+            <h3>Leadership</h3>
+            <p>Guiding technical teams and mentoring junior developers</p>
+          </div>
         </div>
       </div>
     </div>
@@ -332,113 +398,6 @@
       function closemenu() {
         sidemenu.style.right = "-200px";
       }
-    </script>
-
-    <!-- Bubbles -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const bubbles = document.querySelectorAll(".bubble");
-        const container = document.querySelector(".skills-list");
-
-        // Function to generate a random color
-        function getRandomColor() {
-          const letters = "0123456789ABCDEF";
-          let color = "#";
-          for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-          }
-          return color;
-        }
-
-        // Function to set initial position and velocity of bubbles
-        function setBubbleInitialPosition(bubble, containerRect) {
-          bubble.style.left = `${
-            Math.random() * (containerRect.width - bubble.offsetWidth)
-          }px`;
-          bubble.style.top = `${
-            Math.random() * (containerRect.height - bubble.offsetHeight)
-          }px`;
-          bubble.dataset.vx = (Math.random() * 2 - 1) * 0.5; // Reduced velocity x
-          bubble.dataset.vy = (Math.random() * 2 - 1) * 0.5; // Reduced velocity y
-
-          // Assign a random color to each bubble
-          bubble.style.backgroundColor = getRandomColor();
-        }
-
-        // Function to move bubbles on each animation frame
-        function moveBubbles() {
-          const containerRect = container.getBoundingClientRect();
-
-          bubbles.forEach((bubble) => {
-            const rect = bubble.getBoundingClientRect();
-            let vx = parseFloat(bubble.dataset.vx);
-            let vy = parseFloat(bubble.dataset.vy);
-
-            // Check for collision with container walls
-            if (rect.left + vx < containerRect.left) {
-              vx = Math.abs(vx);
-            } else if (rect.right + vx > containerRect.right) {
-              vx = -Math.abs(vx);
-            }
-
-            if (rect.top + vy < containerRect.top) {
-              vy = Math.abs(vy);
-            } else if (rect.bottom + vy > containerRect.bottom) {
-              vy = -Math.abs(vy);
-            }
-
-            // Check for collision with other bubbles
-            bubbles.forEach((otherBubble) => {
-              if (bubble !== otherBubble) {
-                const otherRect = otherBubble.getBoundingClientRect();
-                if (
-                  rect.left < otherRect.right &&
-                  rect.right > otherRect.left &&
-                  rect.top < otherRect.bottom &&
-                  rect.bottom > otherRect.top
-                ) {
-                  vx = -vx;
-                  vy = -vy;
-                }
-              }
-            });
-
-            bubble.style.left = `${rect.left + vx - containerRect.left}px`;
-            bubble.style.top = `${rect.top + vy - containerRect.top}px`;
-            bubble.dataset.vx = vx;
-            bubble.dataset.vy = vy;
-          });
-
-          requestAnimationFrame(moveBubbles);
-        }
-
-        // Function to move the bubble when clicked
-        function moveBubbleOnClick(event) {
-          const bubble = event.currentTarget;
-          const containerRect = container.getBoundingClientRect();
-
-          // Set a new random velocity
-          bubble.dataset.vx = (Math.random() * 2 - 1) * 1; // Increased velocity x
-          bubble.dataset.vy = (Math.random() * 2 - 1) * 1; // Increased velocity y
-
-          // Move the bubble to a new random position
-          bubble.style.left = `${
-            Math.random() * (containerRect.width - bubble.offsetWidth)
-          }px`;
-          bubble.style.top = `${
-            Math.random() * (containerRect.height - bubble.offsetHeight)
-          }px`;
-        }
-
-        // Set initial positions and add click event listener to each bubble
-        const containerRect = container.getBoundingClientRect();
-        bubbles.forEach((bubble) => {
-          setBubbleInitialPosition(bubble, containerRect);
-          bubble.addEventListener("click", moveBubbleOnClick);
-        });
-
-        moveBubbles();
-      });
     </script>
   </body>
 </html>
