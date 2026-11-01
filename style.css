@@ -539,13 +539,6 @@ nav ul li a:hover::after{
     transform: translateY(-5px);
 }
 
-.btn.btn2 {
-    display: block; /* Change display to block */
-    background: #ff004f;
-    margin: 0 auto; /* Add margin 0 auto to center horizontally */
-    text-align: center;
-  }
-
 .copyright{
     width: 100%;
     text-align: center;
@@ -566,9 +559,6 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/back.jpg);
-    }
     .header-text{
         margin-top: 100%;
         font-size: 16px;

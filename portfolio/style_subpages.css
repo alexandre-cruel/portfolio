@@ -536,3 +536,17 @@ body {
     }
 }
   
+.external-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.back-btn.alt-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 24px;
+    font-size: 14px;
+}
