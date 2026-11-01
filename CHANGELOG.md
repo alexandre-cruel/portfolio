@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0] - 2026-11-01
+
+### Added
+
+- MDS120 Morocco (2026) as first achievement, "& Gym" in sports, Open Graph tags.
+- GitHub and YouTube links on the personal time page.
+- Home page quick stats: marathons + MDS120 and diving licence replace km run and sax years.
+
+### Updated
+
+- "Personal Universe" renamed "My Personal Time" and opens in the same tab.
+- Pilot licence moved to 4th place, scores re-ordered; diving is now French "Niveau 2".
+- Clarified location: Paris-based company, full remote from Montpellier.
+
+### Removed
+
+- Phone number, CV download and unused images (CV, run1, saxo2, science3).
+
+### Fixed
+
+- Experience dates for the 2019 internship, favicon type, missing mobile header image, unclosed div, global `event` in tabs.
+
 ## [2.0.0] - 2025-07-23
 
 ### Added

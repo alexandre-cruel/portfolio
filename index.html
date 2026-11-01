@@ -3,13 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML, CSS" />
+    <meta
+      name="keywords"
+      content="Alexandre Cruel, Machine Learning Engineer, MLOps, Data Engineer, Speech AI, portfolio"
+    />
     <meta
       name="description"
       content="This is the portfolio of Alexandre Cruel, Machine Learning Engineer."
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Alex Cruel Personal Portfolio Website</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Alexandre Cruel - Machine Learning Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Alexandre Cruel, Machine Learning Engineer: Speech AI, MLOps and data engineering."
+    />
+    <meta property="og:url" content="https://alexandre-cruel.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://alexandre-cruel.github.io/portfolio/images/profile.png"
+    />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/6d0abaf34a.js"
@@ -17,7 +31,7 @@
     ></script>
     <link
       rel="shortcut icon"
-      type="images/favicon.png"
+      type="image/png"
       href="images/favicon.png"
     />
   </head>
@@ -42,8 +56,8 @@
           <h1>
             Hi, <br />
             I'm <span> Alexandre Cruel </span> <br />
-            located in Montpellier, <br />
-            working for Lalilo.
+            working for Lalilo (Paris), <br />
+            full remote from Montpellier.
           </h1>
         </div>
       </div>
@@ -58,8 +72,8 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              I'm currently working at Lalilo, Paris as a Machine Learning
-              Engineer, where I'm building data loading and transformation
+              I'm currently working at Lalilo, a Paris-based company, as a
+              Machine Learning Engineer, fully remote from Montpellier, where I'm building data loading and transformation
               pipelines to maintain the product data platform. I'm also working
               on cutting-edge Speech AI models for children's voices, Natural
               Language Understanding, and Social Recommendation Systems while
@@ -163,7 +177,7 @@
                   ML Engineer, National Bank of Canada
                 </li>
                 <li>
-                  <span>Sep 2019 - April 2019</span> <br />
+                  <span>April 2019 - September 2019</span> <br />
                   Artificial Intelligence Intern, National Bank of Canada
                 </li>
               </ul>
@@ -311,7 +325,7 @@
         <div class="hobbies-preview">
           <div class="hobby-card main-card">
             <div class="hobby-icon">🎮</div>
-            <h3>Personal Universe</h3>
+            <h3>My Personal Time</h3>
             <p>
               Discover my passions, hobbies, achievements, and the things that
               make me tick outside of work!
@@ -325,24 +339,22 @@
             <a
               href="portfolio/hobbies.html"
               class="explore-btn"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <i class="fas fa-rocket"></i>
-              Explore My World
+              Explore My Free Time
             </a>
           </div>
 
           <div class="quick-stats">
             <div class="stat-item">
               <div class="stat-icon">🏃‍♂️</div>
-              <div class="stat-number">1000+</div>
-              <div class="stat-label">KM Run This Year</div>
+              <div class="stat-number">2 Marathons</div>
+              <div class="stat-label">+ MDS120 Morocco (120km)</div>
             </div>
             <div class="stat-item">
-              <div class="stat-icon">🎵</div>
-              <div class="stat-number">15+</div>
-              <div class="stat-label">Years Playing Sax</div>
+              <div class="stat-icon">🤿</div>
+              <div class="stat-number">Niveau 2</div>
+              <div class="stat-label">Scuba Diving License</div>
             </div>
             <div class="stat-item">
               <div class="stat-icon">✈️</div>
@@ -367,9 +379,6 @@
                 >alexandre.crucru@gmail.com</a
               >
             </p>
-            <p>
-              <i class="fa-sharp fa-solid fa-square-phone"></i> +33 667928245
-            </p>
             <div class="social-icons">
               <a href="https://www.linkedin.com/in/alexandre-cruel-3a89ab153/"
                 ><i class="fa-brands fa-linkedin"></i
@@ -378,12 +387,6 @@
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
-            <a
-              href="images/CV-alexandre-cruel-2022.pdf"
-              download
-              class="btn btn2"
-              >Download CV</a
-            >
           </div>
         </div>
       </div>
@@ -400,11 +403,11 @@
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
 
-      function opentab(tabname) {
-        for (tablink of tablinks) {
+      function opentab(tabname, event) {
+        for (const tablink of tablinks) {
           tablink.classList.remove("active-link");
         }
-        for (tabcontent of tabcontents) {
+        for (const tabcontent of tabcontents) {
           tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
